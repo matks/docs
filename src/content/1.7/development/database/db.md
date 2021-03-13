@@ -5,7 +5,7 @@ weight: 1
 
 # Using the database with the Db class
 
-## Get link to the database
+## Initialize connection to database
 
 ```php
 <?php
@@ -15,7 +15,7 @@ weight: 1
 $db = \Db::getInstance();
 ```
 
-The first call to this method initialize the link to the database, and return the same link to all the next calls.
+The first call to this method initializes the link to the database, and return the same link to all the next calls.
 `$db` in this example will be reused in all the next examples.
 
 ## Db class methods
@@ -61,8 +61,9 @@ $salesCount = $db->getValue($request);
 
 As the method deals with raw SQL requests, the `_DB_PREFIX_` must be used.
 
-This method is convenient when you need only one value to retrieve from the database.
-It prevent to loop in several arrays in order to get the first value of the first row.
+This method is convenient if you want to retrieve only one value from the database.
+
+It avoids to loop in several arrays in order to get the first value of the first row.
 
 ### Execute a raw SQL request (UPDATE, INSERT...)
 
@@ -90,7 +91,7 @@ $result = $db->insert('db_table', array(
 
 `_DB_PREFIX_` will be automatically prefixed to the table name.
 
-The result is boolean saying if the request was properly executed or not.
+The result is a boolean whose state indicates if the request was properly executed or not.
 
 ### Insert multiple rows in the database (batch insert)
 
@@ -118,7 +119,7 @@ This will execute the `INSERT` SQL command only once.
 
 `_DB_PREFIX_` will be automatically prefixed to the table name.
 
-The result is boolean saying if the request was properly executed or not.
+The result is a boolean whose state indicates if the request was properly executed or not.
 
 
 ### Update a row in the database
@@ -134,4 +135,5 @@ $result = $db->update('db_table', array(
 
 `_DB_PREFIX_` will be automatically prefixed to the table name.
 
-The result is boolean saying if the request was properly executed or not.
+The result is a boolean whose state indicates if the request was properly executed or not.
+
