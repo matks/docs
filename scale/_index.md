@@ -48,4 +48,6 @@ Another way to scale your shop is to introduce other systems to improve your per
 3. Use Elasticsearch or a solution built on it for processing customer searches
 4. Use a Content Delivery Network (CDN) for static files
 
+Test
+
 Note: services like a CDN or HTTP accelerator are useful in a production environment, not in a development environment.
