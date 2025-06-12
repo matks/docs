@@ -47,7 +47,7 @@ In the following diagrams, you can see the workflow of each component, separated
 
 ### Query Provider
 
-{{< figure src="../img/query-provider.drawio.svg" title="Query Provider" >}}
+{{< figure src="../../img/query-provider.drawio.svg" title="Query Provider" >}}
 
 {{% notice note %}}
 You can update this schema using the [source XML file](/9/admin-api/img/query-provider.drawio) importable in services like [draw.io](https://draw.io).
@@ -57,7 +57,7 @@ You can update this schema using the [source XML file](/9/admin-api/img/query-pr
 
 The second part is optional, depending on the endpoint expected return (empty response, or the update response content), it follows the same workflow as the QueryProvider.
 
-{{< figure src="../img/command-processor.drawio.svg" title="Command Processor" >}}
+{{< figure src="../../img/command-processor.drawio.svg" title="Command Processor" >}}
 
 {{% notice note %}}
 You can update this schema using the [source XML file](/9/admin-api/img/command-processor.drawio) importable in services like [draw.io](https://draw.io).
